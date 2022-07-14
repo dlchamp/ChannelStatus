@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ChannelStatus"
+version = "0.1.0"
+description = "Lockdown and unlock specified channels based on set timers."
+authors = ["DLCHAMP <36091350+dlchamp@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+disnake = "^2.5.1"
+black = "^22.6.0"
+pytz = "^2022.1"
+SQLAlchemy = {extras = ["asyncio"], version = "^1.4.39"}
+aiosqlite = "^0.17.0"
+python-dotenv = "^0.20.0"
+loguru = "^0.6.0"
+tabulate = "^0.8.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
